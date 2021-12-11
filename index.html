@@ -222,8 +222,7 @@
 
           <script>
 
-            //conexão back4app
-
+            //conexão banck4app
 
             async function GetInformacao() {
 
@@ -265,6 +264,8 @@
                 classSkilss[indexHtml].innerHTML = saveSkills[index];
               }
 
+              const sobre = document.getElementById("info_1");
+
               const inserirSobre = async () => {
                 const info_1 = Parse.Object.extend("info_1");
                 const query = new Parse.Query(info_1);
@@ -276,17 +277,17 @@
                     sobre.innerHTML += quemSou;
                   }
                 } catch (error) {
-                  console.error("Error while fetching sectio sobre", error);
+                  console.error("Error while fetching sobre", error);
                 }
               };
 
               inserirSobre();
+
             }
 
             window.onload = () => {
               GetInformacao()
             }
-
           </script>
 
 </body>
