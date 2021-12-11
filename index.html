@@ -220,88 +220,75 @@
             </div>
           </div>
 
-   <script> 
-   
-    //inserindo skills
-   
-    //conexão banco
+          <script>
 
-    async function GetInformacao() {
-    
-        Parse.initialize("oy3r8fErVEWh5pAr6o7jpTnRXZExGoPEiCBagCWf", "k0HJGDy6jhpjqRFkP7ti4gESM5iE1c7DkUgTdRic"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
-        Parse.serverURL = "https://parseapi.back4app.com/";
-    
-    
-         const saveSkills = [];
-         const informacaoPortfolio = await Parse.Object.extend("portfolio")
-         const query = new Parse.Query(informacaoPortfolio);
-         try {
-             const banco = await query.find()
-             console.log(banco)
-             for (let index = 0; index < banco.length; index++) {
-                 // console.log()          
-                 const dados = await query.get(banco[index].id)
-                 saveSkills.push(dados.get('skills'))
-             }
-     
-             inserirSkill(saveSkills)
-             
-         } catch (err) {
-             alert(err)
-         }
-     }
-     
-     
-     function inserirSkill(saveSkills) {
-         console.log(saveSkills);
-         const classSkilss = document.getElementsByClassName('skills')
-         const idsHtml = []
-         for (let index = 0; index < classSkilss.length; index++) {
-             idsHtml.push(classSkilss[index].id)
-             console.log(classSkilss[index]);
-         }
-     
-     
-        
-         for (let index = 0; index < idsHtml.length; index++) {
-             const indexHtml = idsHtml.indexOf(saveSkills[index].toLowerCase().replace(/ /g, ""));
-             classSkilss[indexHtml].innerHTML = saveSkills[index];
-         }
-     
-           
-     }
-     
-     
-     window.onload = () => {
-         GetInformacao()
-     }
-     
+            //conexão back4app
 
-    //inserindo descrição da section 'Sobre'
-    
-    Parse.initialize("oy3r8fErVEWh5pAr6o7jpTnRXZExGoPEiCBagCWf", "k0HJGDy6jhpjqRFkP7ti4gESM5iE1c7DkUgTdRic"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
-        Parse.serverURL = "https://parseapi.back4app.com/";
-    let sobre = document.getElementById("info_1");
-    
-    const inserirSobre = async () => {
-      const info_1 = Parse.Object.extend("info_1");
-      const query = new Parse.Query(info_1);
-      sobre.innerHTML = "";
-      try {
-        const results = await query.find();
-        for (const object of results) {
-          const quemSou = object.get("quemSou");
-          sobre.innerHTML += quemSou;
-        }
-      } catch (error) {
-        console.error("Error while fetching sobre", error);
-      }
-    };
-    
-    inserirSobre();
-    
-</script>       
-          
+
+            async function GetInformacao() {
+
+              Parse.initialize("oy3r8fErVEWh5pAr6o7jpTnRXZExGoPEiCBagCWf", "k0HJGDy6jhpjqRFkP7ti4gESM5iE1c7DkUgTdRic"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+              Parse.serverURL = "https://parseapi.back4app.com/";
+
+
+              const saveSkills = [];
+
+              const informacaoPortfolio = await Parse.Object.extend("portfolio")
+              const query = new Parse.Query(informacaoPortfolio);
+              try {
+                const banco = await query.find()
+                console.log(banco)
+                for (let index = 0; index < banco.length; index++) {
+                  // console.log()          
+                  const dados = await query.get(banco[index].id)
+                  saveSkills.push(dados.get('skills'))
+                }
+
+                inserirSkill(saveSkills)
+
+              } catch (error) {
+                alert(error)
+              }
+            }
+
+            function inserirSkill(saveSkills) {
+              console.log(saveSkills);
+              const classSkilss = document.getElementsByClassName('skills')
+              const idsHtml = []
+              for (let index = 0; index < classSkilss.length; index++) {
+                idsHtml.push(classSkilss[index].id)
+                console.log(classSkilss[index]);
+              }
+
+              for (let index = 0; index < idsHtml.length; index++) {
+                const indexHtml = idsHtml.indexOf(saveSkills[index].toLowerCase().replace(/ /g, ""));
+                classSkilss[indexHtml].innerHTML = saveSkills[index];
+              }
+
+              const inserirSobre = async () => {
+                const info_1 = Parse.Object.extend("info_1");
+                const query = new Parse.Query(info_1);
+                sobre.innerHTML = "";
+                try {
+                  const results = await query.find();
+                  for (const object of results) {
+                    const quemSou = object.get("quemSou");
+                    sobre.innerHTML += quemSou;
+                  }
+                } catch (error) {
+                  console.error("Error while fetching sectio sobre", error);
+                }
+              };
+
+              inserirSobre();
+            }
+
+            window.onload = () => {
+              GetInformacao()
+            }
+
+          </script>
+
 </body>
 
 </html>
