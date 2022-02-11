@@ -1,6 +1,6 @@
 # Marcelle Mascarenhas - Portfólio
 
-Projeto em andamento, que irá reunir meus dados de contato e projetos.
+Projeto em andamento | Reunir dados de contato e projetos.
 
 
 ## Link de acesso
