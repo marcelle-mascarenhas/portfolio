@@ -2,294 +2,249 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio Marcelle</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-  <script src="../back4app/script.js" type='module' defer></script>
-  <script src="./js/script.js" type='module' defer></script>
-  <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV DIGITAL - MARCELLE MASCARENHAS</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script></script>
 </head>
 
 <body>
-  <!--=======Top button=======-->
-  <div class="scrollTop-btn flex-center">
-    <i class="fas fa-arrow-up"></i>
-  </div>
+    <!--Header-->
+    <header>
+        <a href="#" class="logo">Marcelle<i class='bx bx-code-alt'></i></a>
 
-  <!--=======Light/Dark button=======-->
-  <div class="theme-btn flex-center">
-    <i class="fas fa-moon"></i>
-    <i class="fas fa-sun"></i>
-  </div>
+        <div class="bx bx-menu" id="menu-icon"></div>
 
-  <!--=======Header=======-->
-  <header>
-    <div class="nav-bar">
-      <a href="#" class="logo">Marcelle <i class="fas fa-code"></i></a>
-      <div class="navegacao">
-        <div class="nav-items">
-          <div class="nav-close-btn"></div>
-          <a class="active" href="#">Inicio</a>
-          <a href="#sobre">Quem sou</a>
-          <a href="#conhecimentos">Conhecimentos</a>
-          <a href="#projeto">Projetos</a>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Quem sou</a></li>
+            <li><a href="#conhecimentos">Conhecimentos</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="social">
+            <a href="https://github.com/marcelle-mascarenhas"><i class='bx bxl-github'></i></a>
+            <a href="https://linkedin.com/ln/marcelle-mascarenhas"><i class='bx bxl-linkedin'></i></a>
         </div>
-      </div>
-      <div class="nav-menu-btn"></div>
-    </div>
-  </header>
-
-  <!--=======Inicio section=======-->
-  <section class="inicio flex-center" id="inicio">
-    <div class="inicio-container">
-      <div class="midia-icones">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/marcelle-mascarenhas"><i class="fab fa-github"></i></a>
-      </div>
-      <div class="info">
-        <h2>Olá, eu sou <br></h2>
-        <span>Marcelle Mascarenhas.</span>
-        <h3>Sou estudante do curso de Sistemas para Internet.</h3>
-        <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtMrkxRVDPbgMWmWgTPNxMJgdqcqxGbMpCBMGBHDMrKTgkdrWkNgqPjHMXdxfgdhxPPssBHQ"
-          target="_blank" class="btn">Contato <i class="fas fa-arrow-circle-right"></i></a>
-      </div>
-      <div class="inicio-img">
-        <div class="linha-1"></div>
-        <div class="linha-2"></div>
-        <img src="img/img-1.png" alt="">
-      </div>
-    </div>
-    <a href="#sobre" class="scroll-down"> <i class="fas fa-arrow-down"></i></a>
-  </section>
-
-  <!--=======Sobre section=======-->
-  <section class="sobre section" id="sobre">
-    <div class="container flex-center">
-      <h2 class="section-title-02">Quem sou</h2>
-      <div class="conteudo flex-center">
-        <div class="sobre-img">
-          <img src="img/img-2.png" alt="">
+        <div class="home-img">
+            <div class="linha-1"></div>
+            <div class="linha-2"></div>
+            <img src="img/img-1.png" alt="">
         </div>
-        <div class="sobre-info">
-          <div class="descricao">
-            <p id="info_1"></p>
-          </div>
-          <a href="" class="btn">Download CV <i class="fas fa-download"></i></a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!--=======Conhecimentos section=======-->
-  <section class="conhecimentos section" id="conhecimentos">
-    <div class="container flex-center">
-      <h2 class="section-title-02">Conhecimentos</h2>
-      <div class="conteudo">
-        <div class="conhecimentos-info">
-          <div class="educacao">
-            <h4><label>Educação</label></h4>
-            <ul class="edu-lista">
-              <li class="item">
-                <span class="ano">2013-2018</span>
-                <p><span>Bacharelado em Química</span> - Universidade Federal de Pernambuco</p>
-              </li>
-              <li class="item">
-                <span class="ano">2021-Atual</span>
-                <p><span>Sistemas para Internet</span> - Universidade Católica de Pernambuco</p>
-              </li>
-            </ul>
-          </div>
-          <div class="educacao">
-            <h4><label>Skills</label></h4>
-            <ul class="bars">
-              <li class="bar">
-                <div class="info">
-                  <span class="skills" id="html"></span>
-                  <span>70%</span>
-                </div>
-                <div class="linha html"></div>
-              </li>
-              <li class="bar">
-                <div class="info">
-                  <span class="skills" id="css"></span>
-                  <span>65%</span>
-                </div>
-                <div class="linha css"></div>
-              </li>
-              <li class="bar">
-                <div class="info">
-                  <span class="skills" id="javascript"></span>
-                  <span>60%</span>
-                </div>
-                <div class="linha javascript"></div>
-              </li>
-              <li class="bar">
-                <div class="info">
-                  <span class="skills" id="java"></span>
-                  <span>60%</span>
-                </div>
-                <div class="linha java"></div>
-              </li>
-              <li class="bar">
-                <div class="info">
-                  <span class="skills" id="adobexd"></span>
-                  <span>70%</span>
-                </div>
-                <div class="linha adobexd"></div>
-              </li>
-            </ul>
-          </div>
-          <div class="educacao">
-            <h4><label>Prêmios / Certificados</label></h4>
-            <ul class="edu-lista">
-              <li class="item">
-                <span class="ano">2017</span>
-                <p><span>1º Lugar da Área de ciências exatas e da terra.</span> - 23º Congresso de Iniciação Científica
-                  da Universidade Federal de Pernambuco (CONIC).</p>
-              </li>
-            </ul>
-          </div>
+        <div class="home-texto">
+            <span>Olá, eu sou</span>
+            <h1>Marcelle Mascarenhas</h1>
+            <h2>Sou estudante do curso de Sistemas para Internet</h2>
+            <p></p>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsdLRqhFNJbPdWrzbTdWGrPdBtcglplnkrSSJjdhtqWsfGfCjrJsGQXzjcZLKLrSgKMhNDkq"
+                target="_blank" class="btn">Contato <i class="fas fa-arrow-circle-right"></i></a>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!--=======Projetos section=======-->
-  <section class="projeto section" id="projeto">
-    <div class="container flex-center">
-      <h2 class="section-title-02">Projetos</h2>
-      <div class="conteudo">
-        <div class="projeto-lista">
-          <div class="img-card-container">
-            <div class="img-card">
-              <div class="overlay"></div>
-              <div class="info">
-                <h3>HTML + CSS</h3>
-              </div>
-              <img src="img/img-monalisa.png" alt="">
+        <div class="scroll-down">
+            <a href="#sobre">
+                <i class='bx bx-mouse'></i>
+                <i class='bx bxs-down-arrow-alt'></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="sobre" id="sobre">
+        <div class="heading">
+            <h2>Quem sou<span> .</span></h2>
+        </div>
+        <div class="sobre-container">
+            <div class="sobre-img">
+                <img src="img/img-2.png" alt="">
             </div>
-            <div class="projeto-model flex-center">
-              <div class="projeto-model-body">
-                <i class="fas fa-times projeto-close-btn"></i>
-                <img src="img/img-monalisa.png" alt="">
-                <p><span>Rede Monalisa</span> foi o primeiro projeto desenvolvido na disciplina de Introdução a
-                  Programação Web.</p>
-                <a href="https://github.com/marcelle-mascarenhas/site-monalisa" class="btn">+ Detalhes</a>
-              </div>
+            <div class="sobre-texto">
+                <p>Meu nome é <b>Marcelle Mascarenhas</b>, sou de Recife - PE. Atualmente sou estudante do curso
+                    de Sistemas para Internet - 3º período - da UNICAP (Universidade Católica de Pernambuco), mas curiosamente, essa
+                    não é minha primeira faculdade, também cursei Bacharelado em Química na UFPE.</p><br>
+                <p>Se você veio aqui conhecer meu trabalho, saiba que sou apaixonada pelo que faço e estou sempre
+                    tentando fazer melhor, porque sempre dá.</p>
+                <div class="informacao">
+
+                    <div class="info-box">
+                        <i class='bx bxs-phone'></i>
+                        <span>(81) 99744-5493</span>
+                    </div>
+
+                    <div class="info-box">
+                        <i class='bx bxs-envelope'></i>
+                        <span>marcellebts@gmai.com</span>
+                    </div>
+                </div>
+                <a href="cv-marcelle-mascarenhas.pdf" download="cv-marcelle-mascarenhas.pdf" target="_blank" class="btn">Download Cv</a>
             </div>
-          </div>
-          <div class="img-card-container">
-            <div class="img-card">
-              <div class="overlay"></div>
-              <div class="info">
-                <h3>HTML + CSS + JavaScript</h3>
-              </div>
-              <img src="img/img-ela-resolve.png" alt="">
+        </div>
+    </section>
+    <!-- Conhecimentos -->
+    <section class="conhecimentos" id="conhecimentos">
+        <div class="heading">
+            <h2>Conhecimentos<span> .</span></h2>
+        </div>
+        <div class="conteudo">
+            <div class="conhecimentos-info">
+                <div class="educacao">          
+                    <h4><label>Educação</label></h4>
+                    <ul class="edu-lista">
+                        <li class="item">
+                            <span class="ano">2013-2018</span>
+                            <p><span>Bacharelado em Química</span> - Universidade Federal de Pernambuco</p>
+                        </li>
+                        <li class="item">
+                            <span class="ano">2021-Atual</span>
+                            <p><span>Sistemas para Internet</span> - Universidade Católica de Pernambuco</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="educacao">
+                    <h4><label>Skills</label></h4>
+                    <ul class="bars">
+                        <li class="bar">
+                            <div class="info">
+                                <span>HTML</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="linha html"></div>
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>CSS</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="linha css"></div>
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>JavaScript</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="linha javascript"></div>
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>Java</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="linha java"></div>
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>Adobe XD</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="linha adobexd"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="educacao">
+                    <h4><label>Prêmios / Certificados</label></h4>
+                    <ul class="edu-lista">
+                        <li class="item">
+                            <span class="ano">2017</span>
+                            <p><span>1º Lugar da Área de ciências exatas e da terra.</span> - 23º Congresso de Iniciação
+                                Científica
+                                da Universidade Federal de Pernambuco (CONIC).</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="projeto-model flex-center">
-              <div class="projeto-model-body">
-                <i class="fas fa-times projeto-close-btn"></i>
-                <img src="img/img-ela-resolve.png" alt="site-ela-resolve">
-                <p><span>Ela Resolve</span> foi o projeto de conclusão da disciplina de Introdução a Programação Web,
-                  baseado no desafio proposto pela Residência de Software - Porto Digital.</p>
-                <a href="https://github.com/marcelle-mascarenhas/site-ela-resolve" class="btn">+ Detalhes</a>
-              </div>
+        </div>
+        </div>
+
+    </section>
+    <!-- Projetos -->
+    <section class="projetos" id="projetos">
+        <div class="heading">
+            <h2>Projetos<span> .</span></h2>
+        </div>
+        <div class="projetos-conteudo">
+            <div class="conteudo">
+                <div class="projeto-lista">
+                    <!-- projeto 1 -->
+                    <div class="img-card-container">
+                        <div class="img-card">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <h3>HTML + CSS</h3>
+                            </div>
+                            <img src="img/img-monalisa.png" alt="">
+                        </div>
+                        <div class="projeto-model flex-center">
+                            <div class="projeto-model-body">
+                                <i class="fas fa-times projeto-close-btn"></i>
+                                <img src="img/img-monalisa.png" alt="">
+                                <p><span>Rede Monalisa - </span> Meu primeiro site desenvolvido para disciplina de Introdução a Programação Web.</p>
+                                <a href="https://github.com/marcelle-mascarenhas/site-monalisa" class="btn">+
+                                    Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- projeto 2 -->
+                    <div class="img-card-container">
+                        <div class="img-card">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <h3>HTML + CSS + JavaScript + UI/UX Design</h3>
+                            </div>
+                            <img src="img/img-ela-resolve.png" alt="">
+                        </div>
+                        <div class="projeto-model flex-center">
+                            <div class="projeto-model-body">
+                                <i class="fas fa-times projeto-close-btn"></i>
+                                <img src="img/img-ela-resolve.png" alt="site-ela-resolve">
+                                <p><span>Ela Resolve - </span> Projeto idealizado por mim e desenvolvido para Residência de Software 2021.1 - Porto Digital | Finalista dentre os melhores projetos da edição.</p>
+                               
+                                <a href="https://github.com/marcelle-mascarenhas/site-ela-resolve" class="btn">+
+                                    Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- projeto 3 -->
+                    <div class="img-card-container">
+                        <div class="img-card">
+                            <div class="overlay"></div>
+                            <div class="info">
+                                <h3>JavaScript + React + GTM + Google Analytics</h3>
+                            </div>
+                            <img src="img/img-form-track.png" alt="">
+                        </div>
+                        <div class="projeto-model flex-center">
+                            <div class="projeto-model-body">
+                                <i class="fas fa-times projeto-close-btn"></i>
+                                <img src="img/img-form-track.png" alt="">
+                                <p><span>Form Tracking - </span> Projeto desenvolvido para Residência de Software 2021.2, baseado na proposta da empresa <b>Cesar</b> - Porto Digital |     Finalista dentre os melhores projetos da edição.</p>
+                                <a href="https://github.com/marcelle-mascarenhas/residencia-squad-cesar"
+                                    class="btn">+ Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="img-card-container">
-            <div class="img-card">
-              <div class="overlay"></div>
-              <div class="info">
-                <h3>UI/UX Design</h3>
-              </div>
-              <img src="img/img-prototipo-ela-resolve.png" alt="">
-            </div>
-            <div class="projeto-model flex-center">
-              <div class="projeto-model-body">
-                <i class="fas fa-times projeto-close-btn"></i>
-                <img src="img/img-prototipo-ela-resolve.png" alt="">
-                <p><span>Ela Resolve</span> protótipo navegável desenvolvido para Residência de Software - Porto
-                  Digital.</p>
-                <a href="https://xd.adobe.com/view/236c22f4-ce49-47c5-9755-f120d6437bb9-763f/?fullscreen" class="btn">+
-                  Detalhes</a>
-              </div>
-            </div>
-          </div>
+    </section>
 
-          <script>
+    <!-- Footer -->
+    <div class="footer">
+        <h2>Marcelle</h2>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=100004773587551"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/mar.mascarenhas/"><i class='bx bxl-instagram'></i></a>
 
-            //conexão banck4app
-
-            async function GetInformacao() {
-
-              Parse.initialize("oy3r8fErVEWh5pAr6o7jpTnRXZExGoPEiCBagCWf", "k0HJGDy6jhpjqRFkP7ti4gESM5iE1c7DkUgTdRic"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
-              Parse.serverURL = "https://parseapi.back4app.com/";
+        </div>
 
 
-              const saveSkills = [];
-
-              const informacaoPortfolio = await Parse.Object.extend("portfolio")
-              const query = new Parse.Query(informacaoPortfolio);
-              try {
-                const banco = await query.find()
-                console.log(banco)
-                for (let index = 0; index < banco.length; index++) {
-                  // console.log()          
-                  const dados = await query.get(banco[index].id)
-                  saveSkills.push(dados.get('skills'))
-                }
-
-                inserirSkill(saveSkills)
-
-              } catch (error) {
-                alert(error)
-              }
-            }
-
-            function inserirSkill(saveSkills) {
-              console.log(saveSkills);
-              const classSkilss = document.getElementsByClassName('skills')
-              const idsHtml = []
-              for (let index = 0; index < classSkilss.length; index++) {
-                idsHtml.push(classSkilss[index].id)
-                console.log(classSkilss[index]);
-              }
-
-              for (let index = 0; index < idsHtml.length; index++) {
-                const indexHtml = idsHtml.indexOf(saveSkills[index].toLowerCase().replace(/ /g, ""));
-                classSkilss[indexHtml].innerHTML = saveSkills[index];
-              }
-
-              const sobre = document.getElementById("info_1");
-
-              const inserirSobre = async () => {
-                const info_1 = Parse.Object.extend("info_1");
-                const query = new Parse.Query(info_1);
-                sobre.innerHTML = "";
-                try {
-                  const results = await query.find();
-                  for (const object of results) {
-                    const quemSou = object.get("quemSou");
-                    sobre.innerHTML += quemSou;
-                  }
-                } catch (error) {
-                  console.error("Error while fetching sobre", error);
-                }
-              };
-
-              inserirSobre();
-
-            }
-
-            window.onload = () => {
-              GetInformacao()
-            }
-          </script>
-
+        <script src="js/main.js"></script>
 </body>
 
 </html>
